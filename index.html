@@ -3,54 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escape the Zone</title>
+    <title>Game Score Sheet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="form-container">
-        <div class="form-item large">
-            <h1>Into the Zone: Character Sheet</h1>
-        </div>
-        <div class="form-item">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-        </div>
-        <div class="form-item artifacts">
-            <label for="artifacts">Artifacts:</label>
-            <textarea id="artifacts" name="artifacts"></textarea>
-        </div>
-        <div class="form-item">
-            <label for="str">Strength:</label>
-            <input type="text" id="str" name="str">
-        </div>
-
-        <div class="form-item">
-            <label for="dex">Dexterity:</label>
-            <input type="text" id="dex" name="dex">
-        </div>
-        <div class="form-item">
-            <label for="will">Will:</label>
-            <input type="text" id="will" name="will">
-        </div>
-        <div class="form-item artifacts">
-            <label for="gear">Gear:</label>
-            <textarea id="artifacts" name="gear"></textarea>
-        </div>
-        <div class="form-item">
-            <label for="armor">Melee Weapons:</label>
-            <input type="text" id="armor" name="armor">
-        </div>
-        <div class="form-item">
-            <label for="weapons">Ranged Weapons:</label>
-            <input type="text" id="weapons" name="weapons">
-        </div>
-        <div class="form-item">
-            <label for="ammo">Ammo:</label>
-            <input type="text" id="ammo" name="ammo">
-        </div>
-        <div class="form-item">
-            <label for="cash">Cash:</label>
-            <input type="text" id="cash" name="cash">
+    <div class="main-container">
+        <div class="container">
+            <div class="header">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="name-input">
+                <label for="score">Score:</label>
+                <input type="text" id="score" name="score" class="score-input">
+                <label for="hp">HP:</label>
+                <input type="checkbox" id="checkbox" name="checkbox" class="hp-input">
+                <input type="checkbox" id="checkbox" name="checkbox" class="hp-input">
+                <input type="checkbox" id="checkbox" name="checkbox" class="hp-input">
+            </div>
+            <div class="content-columns">
+                <div class="scrap-bag">
+                    <h2>SCRAP BAG</h2>
+                    <ul class="scrap-list">
+                        <li>
+                            <input type="text" class="text-box" placeholder="Item 1">
+                            <input type="text" class="text-box-number" placeholder="0">
+                            <input type="text" class="text-box-count" placeholder="0">
+                        </li>
+                        <li>
+                            <input type="text" class="text-box" placeholder="Item 2">
+                            <input type="text" class="text-box-number" placeholder="0">
+                            <input type="text" class="text-box-count" placeholder="0">
+                        </li>
+                        <li>
+                            <input type="text" class="text-box" placeholder="Item 3">
+                            <input type="text" class="text-box-number" placeholder="0">
+                            <input type="text" class="text-box-count" placeholder="0">
+                        </li>
+                        <li>
+                            <input type="text" class="text-box" placeholder="Item 4">
+                            <input type="text" class="text-box-number" placeholder="0">
+                            <input type="text" class="text-box-count" placeholder="0">
+                        </li>
+                        <li>
+                            <input type="text" class="text-box" placeholder="Item 5">
+                            <input type="text" class="text-box-number" placeholder="0">
+                            <input type="text" class="text-box-count" placeholder="0">
+                        </li>
+                        <li>
+                            <input type="text" class="text-box" placeholder="Item 6">
+                            <input type="text" class="text-box-number" placeholder="0">
+                            <input type="text" class="text-box-count" placeholder="0">
+                        </li>
+                        <li>
+                            <input type="text" class="text-box" placeholder="Item 7">
+                            <input type="text" class="text-box-number" placeholder="0">
+                            <input type="text" class="text-box-count" placeholder="0">
+                        </li>
+                    </ul>
+                </div>
+                <div class="dayList">
+                    <h2>DAY LIST</h2>
+                    <ul class="scrap-list">
+                        <li class="list-item">
+                                <label for="title">Day 1: </label>
+                                <input type="text" name="title" class="text-box-day">
+                                <input type="text" class="text-box">
+                                <input type="text" class="text-box">
+                                <input type="text" class="text-box">
+                        </li>
+                        <li class="list-item">
+                                <label for="title">Day 2:</label>
+                                <input type="text" name="title" class="text-box-day">
+                                <input type="text" class="text-box">
+                                <input type="text" class="text-box">
+                                <input type="text" class="text-box">
+                        </li>
+                        <li class="list-item">
+                                <label for="title">Day 3:</label>
+                                <input type="text" name="title" class="text-box-day">
+                                <input type="text" class="text-box">
+                                <input type="text" class="text-box">
+                                <input type="text" class="text-box">
+                        </li>
+                        <li class="list-item">
+                                <label for="title">Day 4:</label>
+                                <input type="text" name="title" class="text-box-day">
+                                <input type="text" class="text-box">
+                                <input type="text" class="text-box">
+                                <input type="text" class="text-box">
+                        </li>
+                        <li class="list-item">
+                                <label for="title">Day 5:</label>
+                                <input type="text" name="title" class="text-box-day">
+                                <input type="text" class="text-box">
+                                <input type="text" class="text-box">
+                                <input type="text" class="text-box">
+                        </li>
+                        <li class="list-item">
+                                <label for="title">Day 6:</label>
+                                <input type="text" name="title" class="text-box-day">
+                                <input type="text" class="text-box">
+                                <input type="text" class="text-box">
+                                <input type="text" class="text-box">
+                         </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </body>
